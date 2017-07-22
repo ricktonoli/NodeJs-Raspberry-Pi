@@ -16,7 +16,7 @@ rm $LINKTONODE;
 #remove older version of node:
 rm -R -f /opt/nodejs/;
 #remove symlinks
-rm /usr/bin/node /usr/sbin/node /sbin/node /sbin/node /usr/local/bin/node /usr/bin/npm /usr/sbin/npm /sbin/npm /usr/local/bin/npm;
+rm -r /usr/bin/node /usr/sbin/node /sbin/node /sbin/node /usr/local/bin/node /usr/bin/npm /usr/sbin/npm /sbin/npm /usr/local/bin/npm;
 #This next line will copy Node over to the appropriate folder.
 mv /root/tempNode/$NODEFOLDER /opt/nodejs/;
 #This line will remove the nodeJs tar we downloaded.
